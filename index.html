@@ -1,0 +1,445 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickForm India - Fill Once, Download Ready Government Forms</title>
+    <meta name="description" content="Fill government forms instantly - PAN, Aadhaar, GST, Passport, RTO forms. No registration required. Fill once, download ready-to-submit PDFs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-file-alt brand-icon"></i>
+                <span class="brand-text">QuickForm India</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active" data-page="home">Home</a>
+                <a href="#" class="nav-link" data-page="forms">Forms</a>
+                <a href="#" class="nav-link" data-page="about">About</a>
+                <a href="#" class="nav-link" data-page="contact">Contact</a>
+                <a href="#" class="nav-link" data-page="privacy">Privacy</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Fill Government Forms <span class="text-accent">Instantly</span></h1>
+                        <p class="hero-subtitle">Fill your details once and download ready-to-submit PDFs for PAN, Aadhaar, GST, Passport, and other government forms. No registration required.</p>
+                        <button class="btn-primary hero-btn" onclick="navigateToPage('forms')">
+                            <i class="fas fa-rocket"></i>
+                            Start Now - It's Free
+                        </button>
+                    </div>
+                    <div class="hero-image">
+                        <div class="form-cards">
+                            <div class="form-card"><i class="fas fa-id-card"></i><span>PAN Card</span></div>
+                            <div class="form-card"><i class="fas fa-fingerprint"></i><span>Aadhaar</span></div>
+                            <div class="form-card"><i class="fas fa-briefcase"></i><span>GST</span></div>
+                            <div class="form-card"><i class="fas fa-passport"></i><span>Passport</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features">
+                <div class="container">
+                    <h2 class="section-title">Why Choose QuickForm India?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Save Time</h3>
+                            <p>Fill your details once and generate multiple government forms instantly</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>100% Secure</h3>
+                            <p>Your data stays in your browser. No storage, no tracking, complete privacy</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <h3>Ready PDFs</h3>
+                            <p>Download professionally formatted PDFs ready for government submission</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile Friendly</h3>
+                            <p>Works perfectly on phones, tablets, and computers. Fill forms anywhere</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Available Forms Section -->
+            <section class="available-forms">
+                <div class="container">
+                    <h2 class="section-title">Available Government Forms</h2>
+                    <div class="forms-grid">
+                        <div class="form-item">
+                            <i class="fas fa-id-card form-icon"></i>
+                            <h4>PAN Card Application</h4>
+                            <p>Form 49A for new PAN card</p>
+                        </div>
+                        <div class="form-item">
+                            <i class="fas fa-edit form-icon"></i>
+                            <h4>PAN Card Correction</h4>
+                            <p>Form 49A for PAN updates</p>
+                        </div>
+                        <div class="form-item">
+                            <i class="fas fa-fingerprint form-icon"></i>
+                            <h4>Aadhaar Update</h4>
+                            <p>Demographic update form</p>
+                        </div>
+                        <div class="form-item">
+                            <i class="fas fa-passport form-icon"></i>
+                            <h4>Passport Application</h4>
+                            <p>Fresh passport application</p>
+                        </div>
+                        <div class="form-item">
+                            <i class="fas fa-briefcase form-icon"></i>
+                            <h4>GST Registration</h4>
+                            <p>GST registration form</p>
+                        </div>
+                        <div class="form-item">
+                            <i class="fas fa-car form-icon"></i>
+                            <h4>Driving License</h4>
+                            <p>DL application form</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn-secondary" onclick="navigateToPage('forms')">
+                            View All Forms <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Forms Page -->
+        <div id="forms-page" class="page">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Select Government Form</h1>
+                    <p>Choose the government form you want to fill and download</p>
+                </div>
+            </section>
+
+            <section class="form-selection">
+                <div class="container">
+                    <div class="form-selector">
+                        <label for="form-type">Select Form Type:</label>
+                        <select id="form-type" class="form-select">
+                            <option value="">Choose a form...</option>
+                            <option value="pan-application">PAN Card Application (Form 49A)</option>
+                            <option value="pan-correction">PAN Card Correction (Form 49A)</option>
+                            <option value="aadhaar-update">Aadhaar Demographic Update</option>
+                            <option value="passport-application">Passport Application</option>
+                            <option value="gst-registration">GST Registration</option>
+                            <option value="driving-license">Driving License Application</option>
+                        </select>
+                        <button id="proceed-btn" class="btn-primary" style="margin-top: 20px;" disabled>
+                            Proceed to Fill Details
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Data Entry Page -->
+        <div id="data-entry-page" class="page">
+            <section class="page-header">
+                <div class="container">
+                    <div class="progress-bar">
+                        <div class="progress-step active">1. Enter Details</div>
+                        <div class="progress-step">2. Preview</div>
+                        <div class="progress-step">3. Download</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="data-form">
+                <div class="container">
+                    <form id="user-data-form" class="user-form">
+                        <div class="form-grid">
+                            <!-- Personal Details -->
+                            <div class="form-section">
+                                <h3>Personal Details</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name (as per documents)</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fatherName">Father's Name</label>
+                                        <input type="text" id="fatherName" name="fatherName" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="dob">Date of Birth</label>
+                                        <input type="date" id="dob" name="dob" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" name="gender" required>
+                                            <option value="">Select</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address Details -->
+                            <div class="form-section">
+                                <h3>Address Details</h3>
+                                <div class="form-group">
+                                    <label for="address">Complete Address</label>
+                                    <textarea id="address" name="address" rows="3" required></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" name="city" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="pincode">PIN Code</label>
+                                        <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mobile">Mobile Number</label>
+                                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Document Details -->
+                            <div class="form-section">
+                                <h3>Document Details</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="panNumber">PAN Number (if available)</label>
+                                        <input type="text" id="panNumber" name="panNumber" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="aadhaarNumber">Aadhaar Number (if available)</label>
+                                        <input type="text" id="aadhaarNumber" name="aadhaarNumber" pattern="[0-9]{12}">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary" onclick="navigateToPage('forms')">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                            <button type="submit" class="btn-primary">
+                                Preview Form <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Preview Page -->
+        <div id="preview-page" class="page">
+            <section class="page-header">
+                <div class="container">
+                    <div class="progress-bar">
+                        <div class="progress-step completed">1. Enter Details</div>
+                        <div class="progress-step active">2. Preview</div>
+                        <div class="progress-step">3. Download</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="preview-section">
+                <div class="container">
+                    <div class="preview-container">
+                        <h2>Form Preview</h2>
+                        <div id="form-preview" class="form-preview">
+                            <!-- Generated form will appear here -->
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn-secondary" onclick="navigateToPage('data-entry')">
+                                <i class="fas fa-edit"></i> Edit Details
+                            </button>
+                            <button type="button" class="btn-primary" onclick="generatePDF()">
+                                <i class="fas fa-download"></i> Download PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Static Pages -->
+        <div id="about-page" class="page">
+            <section class="page-header">
+                <div class="container">
+                    <h1>About QuickForm India</h1>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="container">
+                    <div class="content">
+                        <h2>Our Mission</h2>
+                        <p>QuickForm India is designed to simplify the process of filling government forms for Indian citizens. We understand how time-consuming and repetitive it can be to fill multiple government forms with the same information.</p>
+                        
+                        <h2>How It Works</h2>
+                        <p>Our platform allows you to enter your personal details once and automatically generate properly formatted PDFs for various government applications including PAN card, Aadhaar updates, passport applications, and more.</p>
+                        
+                        <h2>Privacy & Security</h2>
+                        <p>Your privacy is our top priority. All data processing happens locally in your browser. We do not store any personal information on our servers. Your sensitive data never leaves your device.</p>
+                        
+                        <h2>Disclaimer</h2>
+                        <p>QuickForm India is not affiliated with any government agency. This is an independent service designed to help citizens prepare their forms more efficiently. Always verify the requirements with official government websites before submission.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="contact-page" class="page">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="container">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <h2>Get in Touch</h2>
+                            <p>Have questions or suggestions? We'd love to hear from you.</p>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>support@quickformindia.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Response Time: 24-48 hours</span>
+                            </div>
+                        </div>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="contactName">Your Name</label>
+                                <input type="text" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address</label>
+                                <input type="email" id="contactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <input type="text" id="contactSubject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Message</label>
+                                <textarea id="contactMessage" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="privacy-page" class="page">
+            <section class="page-header">
+                <div class="container">
+                    <h1>Privacy Policy</h1>
+                </div>
+            </section>
+            <section class="content-section">
+                <div class="container">
+                    <div class="content">
+                        <h2>Information We Collect</h2>
+                        <p>QuickForm India operates on a privacy-first principle. We do not collect, store, or transmit any personal information you enter into our forms. All data processing happens locally in your browser.</p>
+                        
+                        <h2>How We Use Information</h2>
+                        <ul>
+                            <li>Form data is processed locally to generate PDFs</li>
+                            <li>No personal data is sent to our servers</li>
+                            <li>No user accounts or profiles are created</li>
+                            <li>No tracking of individual users</li>
+                        </ul>
+                        
+                        <h2>Data Storage</h2>
+                        <p>Your personal information is temporarily stored in your browser's memory only during the form filling process. Once you close the browser or navigate away, all data is automatically cleared.</p>
+                        
+                        <h2>Third-Party Services</h2>
+                        <p>We may use anonymous analytics to understand website usage patterns. No personal information is shared with third parties.</p>
+                        
+                        <h2>Cookies</h2>
+                        <p>We use minimal cookies only for essential website functionality. No personal data is stored in cookies.</p>
+                        
+                        <h2>Changes to Privacy Policy</h2>
+                        <p>We may update this policy periodically. Any changes will be posted on this page.</p>
+                        
+                        <p><strong>Last updated:</strong> January 2024</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-file-alt brand-icon"></i>
+                    <span class="brand-text">QuickForm India</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" data-page="privacy">Privacy Policy</a>
+                    <a href="#" data-page="about">About</a>
+                    <a href="#" data-page="contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 QuickForm India. Not affiliated with Government of India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
